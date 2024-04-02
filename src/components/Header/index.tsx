@@ -57,7 +57,7 @@ const Header = () => (
       <User className="cursor-pointer" />
       <ListCollapse className="cursor-pointer" />
       <button className="flex items-center justify-center border-solid border-2 border-zinc-500 rounded-sm p-2 gap-2">
-        <Plus className="w-8 h-8 bg-red-600 rounded" />
+        <Plus className="w-8 h-8 bg-red-600 rounded hover:rotate-[180deg] transition ease-linear" />
         <p>Junte-se a nós agora</p>
       </button>
     </div>
