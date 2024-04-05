@@ -10,3 +10,9 @@
 .hero-section {
   background-image: url('/src/assets//images/hero/hero-img.jpg');
 }
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
