@@ -1,4 +1,3 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,4 +18,30 @@
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+}
+
+.card-class.relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-class.relative:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  transform-origin: center;
+  transform: scale(1);
+}
+
+.card-class:hover:before {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
