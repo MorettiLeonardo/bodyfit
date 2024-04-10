@@ -8,21 +8,23 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      if (scrollPosition > 0) {
+      if (window.scrollY > 0 && !scrolled) {
         setScrolled(true)
-      } else {
+      } else if (window.scrollY === 0 && scrolled) {
         setScrolled(false)
       }
     }
 
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [scrolled])
 
   return (
     <header
-      className={`w-full flex fixed items-center justify-between bg-transparent p-4 text-white font-medium transition duration-300 ${scrolled ? 'bg-black' : 'bg-transparent'}`}
+      className={`w-full flex fixed z-10 items-center justify-between p-4 text-white font-medium transition duration-300 ${scrolled ? 'bg-black' : 'bg-transparent'}`}
     >
       <img
         className="w-48 h-18 cursor-pointer"
