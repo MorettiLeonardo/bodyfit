@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full flex fixed z-10 items-center justify-between p-4 text-white font-medium transition duration-300 ${scrolled ? 'bg-black' : 'bg-transparent'}`}
+      className={`w-full flex fixed z-30 items-center justify-between p-4 text-white font-medium transition duration-300 ${scrolled ? 'bg-black' : 'bg-transparent'}`}
     >
       <img
         className="w-48 h-18 cursor-pointer"
