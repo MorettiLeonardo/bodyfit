@@ -3,6 +3,7 @@ import Banner from '../../components/Banner'
 import Classes from '../../components/Classes'
 import Header from '../../components/Header'
 import HomeHero from '../../components/HomeHero'
+import OurTeam from '../../components/OurTeam'
 import WhyChooseUs from '../../components/WhyChooseUs'
 
 const Home = () => (
@@ -13,6 +14,7 @@ const Home = () => (
     <Classes />
     <Banner />
     <WhyChooseUs />
+    <OurTeam />
   </>
 )
 
