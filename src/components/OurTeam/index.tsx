@@ -4,6 +4,7 @@ import trainer2 from '../../assets/images/OurTeam/trainer2.png'
 import trainer3 from '../../assets/images/OurTeam/trainer3.png'
 import trainerBg from '../../assets/images/OurTeam/trainer-bg.png'
 import { Facebook, Instagram, Mail, TwitterIcon } from 'lucide-react'
+import Title from '../TItle'
 
 const teamData = [
   {
@@ -29,7 +30,8 @@ const teamData = [
 const OurTeam = () => (
   <div style={{ backgroundImage: `url(${bg})` }}>
     <div className="container h-screen flex justify-center items-center flex-col">
-      <h2 className="font-bold text-4xl">
+      <Title text="gym trainers" />
+      <h2 className="font-bold text-4xl mt-5">
         Equipe de treinadores especializados
       </h2>
       <p className="text-zinc-500 max-w-96 text-center text-sm leading-5 font-semibold mt-5">

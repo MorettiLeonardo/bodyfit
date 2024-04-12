@@ -1,14 +1,12 @@
 import person from '../../assets/images/Testimonials/testimonial.jpg'
 import as from '../../assets/images/Testimonials/aspas.png'
 import shape from '../../assets/images/Testimonials/testimonial-shape.svg'
-import titleBg from '../../assets/images/titlebg.svg'
+
+import Title from '../TItle'
 
 const Testimonials = () => (
   <div className="container h-screen flex flex-col justify-center items-center gap-[15%] ">
-    <div className="relative flex justify-center items-center w-[16rem]">
-      <h2 className="text-white font-bold uppercase z-30">Testimonials</h2>
-      <img className="w-full h-auto -z-30 absolute" src={titleBg} alt="" />
-    </div>
+    <Title text="Testimonials" />
     <div className="border-8 p-8">
       <div className="relative p-8 bg-black w-full h-80">
         <img

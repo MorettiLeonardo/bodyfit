@@ -8,6 +8,7 @@ import girl from '../../assets//images/AboutUs/girl-run.png'
 import running from '../../assets//images/AboutUs/running.png'
 
 import AboutCard from '../AboutCard'
+import Title from '../TItle'
 
 const AboutUs = () => {
   return (
@@ -32,6 +33,7 @@ const AboutUs = () => {
         </div>
         <div className="grid grid-cols-2 items-center justify-between gap-6 mt-28">
           <div className="flex flex-col gap-8">
+            <Title text="QUEM NÓS SOMOS" />
             <h2 className="text-4xl font-bold">
               Leve sua saúde e corpo ao próximo nível
             </h2>

@@ -4,6 +4,7 @@ import shape from '../../assets/images/ChooseUs/shape.png'
 import bottle from '../../assets/images/ChooseUs/bottle.png'
 import equipament from '../../assets/images/ChooseUs/equipament.png'
 import bag from '../../assets/images/ChooseUs/bag.png'
+import Title from '../TItle'
 
 const WhyChooseUs = () => (
   <div
@@ -13,7 +14,8 @@ const WhyChooseUs = () => (
     <div className="container flex gap-32">
       <img src={main} alt="Uma pessoa treinando" />
       <div className="max-w-lg">
-        <h2 className="text-white font-bold text-4xl">
+        <Title text="Escolha a gente" />
+        <h2 className="text-white font-bold text-4xl mt-6">
           Podemos dar uma forma ao seu corpo aqui!
         </h2>
         <p className="text-zinc-400 leading-6 mt-4">

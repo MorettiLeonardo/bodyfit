@@ -6,6 +6,7 @@ import image5 from '../../assets/images/Classes/mma.jpg'
 import image6 from '../../assets/images/Classes/workout.jpg'
 
 import ClassesCard from '../ClassesCard'
+import Title from '../TItle'
 
 const classesData = [
   {
@@ -48,8 +49,9 @@ const classesData = [
 
 const Classes = () => (
   <section className="bg-white h-screen flex flex-col justify-center items-center">
-    <div className="container">
-      <h1 className="text-center text-4xl font-bold mb-10">
+    <Title text="AULAS EM DESTAQUE" />
+    <div className="container ">
+      <h1 className="text-center text-4xl font-bold mb-10 mt-5">
         Estamos Oferecendo as Melhores Aulas Flexíveis
       </h1>
       <ul className="grid grid-cols-3 gap-6">
