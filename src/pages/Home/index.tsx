@@ -4,6 +4,7 @@ import Classes from '../../components/Classes'
 import Header from '../../components/Header'
 import HomeHero from '../../components/HomeHero'
 import OurTeam from '../../components/OurTeam'
+import Testimonials from '../../components/Testimonials'
 import WhyChooseUs from '../../components/WhyChooseUs'
 
 const Home = () => (
@@ -15,6 +16,7 @@ const Home = () => (
     <Banner />
     <WhyChooseUs />
     <OurTeam />
+    <Testimonials />
   </>
 )
 
