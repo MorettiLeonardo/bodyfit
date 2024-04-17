@@ -8,6 +8,7 @@ import HomeHero from '../../components/HomeHero'
 import OurTeam from '../../components/OurTeam'
 import Testimonials from '../../components/Testimonials'
 import WhyChooseUs from '../../components/WhyChooseUs'
+import Prices from '../../components/Prices'
 
 const Home = () => (
   <>
@@ -20,6 +21,7 @@ const Home = () => (
     <OurTeam />
     <Testimonials />
     <CalcImc />
+    <Prices />
     <BannerTrainer />
   </>
 )

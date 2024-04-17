@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import bg from '../../assets/images/Imc/background.jpg'
 
 const CalcImc = () => {
@@ -8,15 +9,14 @@ const CalcImc = () => {
   const [imc, setImc] = useState(0)
 
   const calcBMI = () => {
-    const bmi = parseFloat(weight) / (parseFloat(height) * 2)
-    setImc(bmi)
+    setImc(parseFloat(weight) / (parseFloat(height) * 2))
 
-    if (bmi <= 18.5) setStatus('Abaixo do peso')
-    else if (bmi <= 24.9) setStatus('Peso normal')
-    else if (bmi <= 29.9) setStatus('Sobrepeso')
-    else if (bmi <= 34.9) setStatus('Obesidade grau I')
-    else if (bmi <= 39.9) setStatus('Obesidade grau II')
-    else if (bmi >= 40) setStatus('Obesidade grau III')
+    if (imc <= 18.5) setStatus('Abaixo do peso')
+    else if (imc <= 24.9) setStatus('Peso normal')
+    else if (imc <= 29.9) setStatus('Sobrepeso')
+    else if (imc <= 34.9) setStatus('Obesidade grau I')
+    else if (imc <= 39.9) setStatus('Obesidade grau II')
+    else if (imc >= 40) setStatus('Obesidade grau III')
   }
 
   return (
@@ -37,7 +37,9 @@ const CalcImc = () => {
               type="number"
               onChange={(ev) => setWeight(ev.target.value)}
             />
-            <p className="text-white ">Seu IMC é: {imc.toFixed(2)}</p>
+            <p className="text-white font-semibold">
+              Seu IMC é: <span className="text-red-600">{imc.toFixed(2)}</span>
+            </p>
           </div>
           <div className="flex flex-col gap-4">
             <input
@@ -46,7 +48,9 @@ const CalcImc = () => {
               type="number"
               onChange={(ev) => setHeight(ev.target.value)}
             />
-            <p className="text-white ">Você está com: {status}</p>
+            <p className="text-white font-semibold">
+              Você está com: <span className="text-red-600">{status}</span>
+            </p>
           </div>
         </div>
         <button
