@@ -10,6 +10,7 @@ import Testimonials from '../../components/Testimonials'
 import WhyChooseUs from '../../components/WhyChooseUs'
 import Prices from '../../components/Prices'
 import LatestBlog from '../../components/LatestBlog'
+import Footer from '../../components/Footer'
 
 const Home = () => (
   <>
@@ -25,6 +26,7 @@ const Home = () => (
     <Prices />
     <LatestBlog />
     <BannerTrainer />
+    <Footer />
   </>
 )
 
