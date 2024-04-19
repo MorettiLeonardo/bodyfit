@@ -10,28 +10,36 @@ import running from '../../assets//images/AboutUs/running.png'
 import AboutCard from '../AboutCard'
 import Title from '../TItle'
 
-const AboutUs = () => {
+type Props = {
+  displayCards?: boolean
+}
+
+const AboutUs = ({ displayCards }: Props) => {
   return (
     <section className="about-section min-h-screen">
       <div className="container">
-        <div className="grid grid-cols-3">
-          <AboutCard
-            img={clock}
-            title="Progreção"
-            text="Nossa equipe de especialistas trabalhará com você para criar um plano personalizado que o ajudará a alcançar o sucesso, passo a passo."
-          />
-          <AboutCard
-            img={workout}
-            text="Nossa equipe de especialistas trabalhará com você para criar um plano personalizado que o ajudará a alcançar o sucesso, passo a passo."
-            title="Progreção"
-          />
-          <AboutCard
-            img={nutrition}
-            text="Nossa equipe de especialistas trabalhará com você para criar um plano personalizado que o ajudará a alcançar o sucesso, passo a passo."
-            title="Progreção"
-          />
-        </div>
-        <div className="grid grid-cols-2 items-center justify-between gap-6 mt-28">
+        {displayCards && (
+          <div className="flex justify-between items-center">
+            <AboutCard
+              img={clock}
+              title="Progreção"
+              text="Nossa equipe de especialistas trabalhará com você para criar um plano personalizado que o ajudará a alcançar o sucesso, passo a passo."
+            />
+            <AboutCard
+              img={workout}
+              text="Nossa equipe de especialistas trabalhará com você para criar um plano personalizado que o ajudará a alcançar o sucesso, passo a passo."
+              title="Progreção"
+            />
+            <AboutCard
+              img={nutrition}
+              text="Nossa equipe de especialistas trabalhará com você para criar um plano personalizado que o ajudará a alcançar o sucesso, passo a passo."
+              title="Progreção"
+            />
+          </div>
+        )}
+        <div
+          className={`flex items-center justify-between gap-6 ${displayCards ? 'mt-28' : 'pt-28'}`}
+        >
           <div className="flex flex-col gap-8">
             <Title text="QUEM NÓS SOMOS" />
             <h2 className="text-4xl font-bold">
@@ -68,7 +76,7 @@ const AboutUs = () => {
             alt="Mulher correndo"
           />
           <img
-            className="absolute right-[800px] max-h-[550px]"
+            className="absolute right-[650px] max-h-[550px]"
             src={running}
             alt="Palavra 'correndo'"
           />
