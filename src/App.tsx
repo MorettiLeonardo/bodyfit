@@ -1,9 +1,12 @@
-import Home from './pages/Home'
+import { BrowserRouter } from 'react-router-dom'
+import RoutesConfig from './routes'
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <BrowserRouter>
+        <RoutesConfig />
+      </BrowserRouter>
     </div>
   )
 }
