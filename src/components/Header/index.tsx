@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ListCollapse, Plus, User } from 'lucide-react'
 
 import Logo from '../../assets/images/BodyFit.png'
@@ -34,20 +35,20 @@ const Header = () => {
       <nav>
         <ul className="flex items-center gap-4">
           <li>
-            <a
+            <Link
               className="cursor-pointer hover:text-red-600 transition ease-linear"
-              href="#"
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="cursor-pointer hover:text-red-600 transition ease-linear"
-              href="#"
+              to="/sobre"
             >
               Sobre
-            </a>
+            </Link>
           </li>
           <li>
             <a
