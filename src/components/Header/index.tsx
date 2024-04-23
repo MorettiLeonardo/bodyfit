@@ -51,12 +51,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a
+            <Link
               className="cursor-pointer hover:text-red-600 transition ease-linear"
-              href="#"
+              to="/galeria"
             >
               Galeria
-            </a>
+            </Link>
           </li>
           <li>
             <a
