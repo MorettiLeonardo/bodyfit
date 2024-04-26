@@ -79,7 +79,7 @@ const Prices = () => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <button className=" max-w-max bg-red-600 text-white flex item-center p-4 gap-2 font-bold uppercase transition ease-linear hover:shadow-2xl">
+              <button className="max-w-max bg-red-600 text-white flex item-center p-4 gap-2 font-bold uppercase transition ease-linear hover:shadow-2xl">
                 COMPRE AGORA
               </button>
             </div>
