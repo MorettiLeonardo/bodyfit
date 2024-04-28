@@ -1,21 +1,22 @@
 import { Search } from 'lucide-react'
 
 import New from '../New'
+import BlogCategories from '../BlogCategories'
 
 const NewsList = () => (
   <div className="container pt-20 flex justify-between">
     <ul className="flex flex-col gap-14">
-      <li className="max-w-[700px] max-h-[700px]">
+      <li className="max-w-[800px] max-h-[800px]">
         <New />
       </li>
-      <li className="max-w-[700px] max-h-[700px]">
+      <li className="max-w-[800px] max-h-[800px]">
         <New />
       </li>
-      <li className="max-w-[700px] max-h-[700px]">
+      <li className="max-w-[800px] max-h-[800px]">
         <New />
       </li>
     </ul>
-    <aside className="max-w-[400px] w-full">
+    <aside className="max-w-[400px] w-full flex flex-col gap-10">
       <div className="flex">
         <input
           className="w-full p-4 rounded-l-lg border border-[#ccc]"
@@ -24,6 +25,7 @@ const NewsList = () => (
         />
         <Search className="bg-red-600 text-white w-[60px] h-[60px] p-3 rounded-r-lg" />
       </div>
+      <BlogCategories />
     </aside>
   </div>
 )
