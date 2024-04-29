@@ -2,6 +2,8 @@ import { Search } from 'lucide-react'
 
 import New from '../New'
 import BlogCategories from '../BlogCategories'
+import BlogPopularTags from '../BlogPopularTags'
+import RecentPosts from '../RecentPosts'
 
 const NewsList = () => (
   <div className="container pt-20 flex justify-between">
@@ -26,6 +28,8 @@ const NewsList = () => (
         <Search className="bg-red-600 text-white w-[60px] h-[60px] p-3 rounded-r-lg" />
       </div>
       <BlogCategories />
+      <BlogPopularTags />
+      <RecentPosts />
     </aside>
   </div>
 )

@@ -5,6 +5,45 @@ import image4 from '../../assets/images/Classes/meditation.jpg'
 import image5 from '../../assets/images/Classes/mma.jpg'
 import image6 from '../../assets/images/Classes/workout.jpg'
 
+export const postsData = [
+  {
+    id: 1,
+    date: '22 de Março/2024',
+    title: 'Yoga para todos',
+    img: image1
+  },
+  {
+    id: 2,
+    date: '22 de Março/2024',
+    title: 'Voltando ao Crossfit',
+    img: image2
+  },
+  {
+    id: 3,
+    date: '22 de Março/2024',
+    title: 'Conheça Grace, embaixadora do fitness',
+    img: image3
+  },
+  {
+    id: 4,
+    date: '22 de Março/2024',
+    title: 'Dicas para Yoga',
+    img: image4
+  },
+  {
+    id: 5,
+    date: '22 de Março/2024',
+    title: 'Aprenda boxe com nosso treinador John',
+    img: image5
+  },
+  {
+    id: 6,
+    date: '22 de Março/2024',
+    title: 'Como ficar magro para o verão',
+    img: image6
+  }
+]
+
 export const classesData = [
   {
     id: 1,
