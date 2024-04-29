@@ -44,6 +44,57 @@ export const postsData = [
   }
 ]
 
+export const newsData = [
+  {
+    id: 1,
+    description:
+      'Nova pesquisa revela que a prática regular de exercícios físicos está associada a uma redução significativa no risco de doenças cardíacas. Especialistas enfatizam a importância de um estilo de vida ativo para a saúde cardiovascular',
+    title: 'Yoga para todos',
+    img: image1,
+    author: 'Pelo Admin | 11 de Marçõ de 2024 | Yoga'
+  },
+  {
+    id: 2,
+    description:
+      'Nova pesquisa revela que a prática regular de exercícios físicos está associada a uma redução significativa no risco de doenças cardíacas. Especialistas enfatizam a importância de um estilo de vida ativo para a saúde cardiovascular',
+    title: 'Voltando ao Crossfit',
+    img: image2,
+    author: 'Pelo Admin | 11 de Marçõ de 2024 | Yoga'
+  },
+  {
+    id: 3,
+    description:
+      'Nova pesquisa revela que a prática regular de exercícios físicos está associada a uma redução significativa no risco de doenças cardíacas. Especialistas enfatizam a importância de um estilo de vida ativo para a saúde cardiovascular',
+    title: 'Conheça Grace, embaixadora do fitness',
+    img: image3,
+    author: 'Pelo Admin | 11 de Marçõ de 2024 | Yoga'
+  },
+  {
+    id: 4,
+    description:
+      'Nova pesquisa revela que a prática regular de exercícios físicos está associada a uma redução significativa no risco de doenças cardíacas. Especialistas enfatizam a importância de um estilo de vida ativo para a saúde cardiovascular',
+    title: 'Dicas para Yoga',
+    img: image4,
+    author: 'Pelo Admin | 11 de Marçõ de 2024 | Yoga'
+  },
+  {
+    id: 5,
+    description:
+      'Nova pesquisa revela que a prática regular de exercícios físicos está associada a uma redução significativa no risco de doenças cardíacas. Especialistas enfatizam a importância de um estilo de vida ativo para a saúde cardiovascular',
+    title: 'Aprenda boxe com nosso treinador John',
+    img: image5,
+    author: 'Pelo Admin | 11 de Marçõ de 2024 | Yoga'
+  },
+  {
+    id: 6,
+    description:
+      'Nova pesquisa revela que a prática regular de exercícios físicos está associada a uma redução significativa no risco de doenças cardíacas. Especialistas enfatizam a importância de um estilo de vida ativo para a saúde cardiovascular',
+    title: 'Como ficar magro para o verão',
+    img: image6,
+    author: 'Pelo Admin | 11 de Marçõ de 2024 | Yoga'
+  }
+]
+
 export const classesData = [
   {
     id: 1,

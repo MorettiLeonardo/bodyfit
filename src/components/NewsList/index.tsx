@@ -1,5 +1,7 @@
 import { Search } from 'lucide-react'
 
+import { newsData } from '../Data'
+
 import New from '../New'
 import BlogCategories from '../BlogCategories'
 import BlogPopularTags from '../BlogPopularTags'
@@ -9,15 +11,16 @@ import BlogAd from '../BlogAd'
 const NewsList = () => (
   <div className="container pt-20 flex justify-between">
     <ul className="flex flex-col gap-14">
-      <li className="max-w-[800px] max-h-[800px]">
-        <New />
-      </li>
-      <li className="max-w-[800px] max-h-[800px]">
-        <New />
-      </li>
-      <li className="max-w-[800px] max-h-[800px]">
-        <New />
-      </li>
+      {newsData.map((currentNew) => (
+        <li key={currentNew.id}>
+          <New
+            img={currentNew.img}
+            title={currentNew.title}
+            description={currentNew.description}
+            author={currentNew.author}
+          />
+        </li>
+      ))}
     </ul>
     <aside className="max-w-[400px] w-full flex flex-col gap-10">
       <div className="flex">
