@@ -4,6 +4,7 @@ import New from '../New'
 import BlogCategories from '../BlogCategories'
 import BlogPopularTags from '../BlogPopularTags'
 import RecentPosts from '../RecentPosts'
+import BlogAd from '../BlogAd'
 
 const NewsList = () => (
   <div className="container pt-20 flex justify-between">
@@ -30,6 +31,7 @@ const NewsList = () => (
       <BlogCategories />
       <BlogPopularTags />
       <RecentPosts />
+      <BlogAd />
     </aside>
   </div>
 )
