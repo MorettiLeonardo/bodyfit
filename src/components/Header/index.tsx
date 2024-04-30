@@ -77,7 +77,7 @@ const Header = () => {
           <li>
             <Link
               className="cursor-pointer hover:text-red-600 transition ease-linear"
-              to="precos"
+              to="/precos"
             >
               Preços
             </Link>
