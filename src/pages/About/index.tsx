@@ -1,10 +1,11 @@
+import { getDefaultFormatCodeSettings } from 'typescript'
 import AboutUs from '../../components/AboutUs'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import HeaderBanner from '../../components/HeaderBanner'
 import OurHistory from '../../components/OurHistory'
 
-export const About = () => (
+const About = () => (
   <>
     <Header />
     <HeaderBanner pageName="Sobre a gente" />
@@ -13,3 +14,5 @@ export const About = () => (
     <Footer />
   </>
 )
+
+export default About
