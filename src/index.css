@@ -50,3 +50,7 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
 }
+
+.bg-filter-only {
+  filter: brightness(0.75);
+}

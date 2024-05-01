@@ -1,6 +1,6 @@
 import ClassesCard from '../ClassesCard'
 import Title from '../TItle'
-import { classesData } from '../Data'
+import { classesMainData } from '../Data'
 
 const Classes = () => (
   <section className="bg-white h-screen flex flex-col justify-center items-center">
@@ -10,7 +10,7 @@ const Classes = () => (
         Estamos Oferecendo as Melhores Aulas Flexíveis
       </h1>
       <ul className="grid grid-cols-3 gap-6">
-        {classesData.map((item) => (
+        {classesMainData.map((item) => (
           <li key={item.id}>
             <ClassesCard
               img={item.img}

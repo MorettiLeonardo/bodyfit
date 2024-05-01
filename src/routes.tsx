@@ -6,6 +6,7 @@ import Gallery from './pages/Gallery'
 import Schedule from './pages/Schedule'
 import Blog from './pages/Blog'
 import PricesPlan from './pages/Prices'
+import ClassesPage from './pages/Classes'
 
 const RoutesConfig = () => (
   <Routes>
@@ -15,6 +16,7 @@ const RoutesConfig = () => (
     <Route path="/programacao" element={<Schedule />} />
     <Route path="/blog" element={<Blog />} />
     <Route path="/precos" element={<PricesPlan />} />
+    <Route path="/aulas" element={<ClassesPage />} />
   </Routes>
 )
 

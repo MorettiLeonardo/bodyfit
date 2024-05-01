@@ -4,6 +4,9 @@ import image3 from '../../assets/images/Classes/power.jpg'
 import image4 from '../../assets/images/Classes/meditation.jpg'
 import image5 from '../../assets/images/Classes/mma.jpg'
 import image6 from '../../assets/images/Classes/workout.jpg'
+import image7 from '../../assets/images/Classes/box.jpg'
+import image8 from '../../assets/images/Classes/yoga.jpg'
+import image9 from '../../assets/images/Classes/fitness.jpg'
 
 export const postsData = [
   {
@@ -95,7 +98,7 @@ export const newsData = [
   }
 ]
 
-export const classesData = [
+export const classesMainData = [
   {
     id: 1,
     img: image1,
@@ -111,7 +114,7 @@ export const classesData = [
   {
     id: 3,
     img: image3,
-    name: 'Power',
+    name: 'Power Lifting',
     time: 'Sabádo: 09:00-10:00'
   },
   {
@@ -131,6 +134,63 @@ export const classesData = [
     img: image6,
     name: 'Musculação',
     time: 'Segunda-feira: 16:00-17:00'
+  }
+]
+
+export const allClassesData = [
+  {
+    id: 1,
+    img: image1,
+    name: 'Ciclismo',
+    time: 'Quarta-feira: 09:00-10:00'
+  },
+  {
+    id: 2,
+    img: image2,
+    name: 'Karate',
+    time: 'Sexta-feira: 10:00-11:00'
+  },
+  {
+    id: 3,
+    img: image3,
+    name: 'Power Lifting',
+    time: 'Sabádo: 09:00-10:00'
+  },
+  {
+    id: 4,
+    img: image4,
+    name: 'Meditação',
+    time: 'Sexta-feira: 13:00-14:00'
+  },
+  {
+    id: 5,
+    img: image5,
+    name: 'Lutas',
+    time: 'Domingo: 18:00-19:00'
+  },
+  {
+    id: 6,
+    img: image6,
+    name: 'Musculação',
+    time: 'Segunda-feira: 16:00-17:00'
+  },
+  {
+    id: 7,
+    img: image7,
+    name: 'Box',
+    time: 'Terça-feira: 19:00-20:00'
+  },
+  {
+    id: 9,
+    img: image8,
+    name: 'Yoga',
+    time: 'Sabádo: 09:00-10:00'
+  },
+  {
+    id: 10,
+    img: image9,
+    name: 'Fitness',
+    time: 'Segunda-feira: 09:00-10:00'
   }
 ]
 
