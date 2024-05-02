@@ -7,7 +7,7 @@ const AllClasses = () => (
     style={{ backgroundImage: `url(${bg})` }}
     className="flex justify-center items-center py-20"
   >
-    <ul className="grid grid-cols-3 gap-6">
+    <ul className="grid gap-6 xl:grid-cols-3 md:grid-cols-2">
       {allClassesData.map((currentClass) => (
         <li
           key={currentClass.id}
