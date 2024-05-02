@@ -7,6 +7,7 @@ import Schedule from './pages/Schedule'
 import Blog from './pages/Blog'
 import PricesPlan from './pages/Prices'
 import ClassesPage from './pages/Classes'
+import ContactUs from './pages/ContactUs'
 
 const RoutesConfig = () => (
   <Routes>
@@ -17,6 +18,7 @@ const RoutesConfig = () => (
     <Route path="/blog" element={<Blog />} />
     <Route path="/precos" element={<PricesPlan />} />
     <Route path="/aulas" element={<ClassesPage />} />
+    <Route path="/contato" element={<ContactUs />} />
   </Routes>
 )
 
