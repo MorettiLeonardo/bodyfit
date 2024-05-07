@@ -19,6 +19,7 @@ const ContactForm = () => (
       name="class"
       id="class"
     >
+      <option value="">Aula</option>
       <option value="Yoga">Yoga</option>
       <option value="Box">Box</option>
       <option value="Corrida">Corrida</option>

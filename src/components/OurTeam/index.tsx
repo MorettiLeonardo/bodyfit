@@ -1,36 +1,15 @@
-import bg from '../../assets/images/OurTeam/teamBg.png'
-import trainer1 from '../../assets/images/OurTeam/trainer1.png'
-import trainer2 from '../../assets/images/OurTeam/trainer2.png'
-import trainer3 from '../../assets/images/OurTeam/trainer3.png'
-import trainerBg from '../../assets/images/OurTeam/trainer-bg.png'
 import { Facebook, Instagram, Mail, TwitterIcon } from 'lucide-react'
-import Title from '../TItle'
 
-const teamData = [
-  {
-    id: 1,
-    name: 'John Lewis',
-    workout: 'Yoga Trainer',
-    img: trainer1
-  },
-  {
-    id: 2,
-    name: 'Jonathan Doe',
-    workout: 'Crossfit Trainer',
-    img: trainer2
-  },
-  {
-    id: 3,
-    name: 'Ana June',
-    workout: 'Personal Trainer',
-    img: trainer3
-  }
-]
+import Title from '../TItle'
+import { teamData } from '../Data'
+
+import bg from '../../assets/images/OurTeam/teamBg.png'
+import trainerBg from '../../assets/images/OurTeam/trainer-bg.png'
 
 const OurTeam = () => (
   <div style={{ backgroundImage: `url(${bg})` }}>
     <div className="container h-screen flex justify-center items-center flex-col">
-      <Title text="gym trainers" />
+      <Title text="Treinadores" />
       <h2 className="font-bold text-4xl mt-5">
         Equipe de treinadores especializados
       </h2>
@@ -38,11 +17,11 @@ const OurTeam = () => (
         Equipe especializada de treinadores ajuda você a ter sucesso em qualquer
         objetivo, orientação personalizada e motivação fornecida!
       </p>
-      <div className="mt-14 grid grid-cols-3 justify-between w-full">
+      <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
         {teamData.map((trainer) => (
           <div
             key={trainer.id}
-            className="flex flex-col justify-end items-center"
+            className="flex flex-col justify-end items-center w-full"
           >
             <img
               className="absolute max-w-[340px] -z-10 mt-20"

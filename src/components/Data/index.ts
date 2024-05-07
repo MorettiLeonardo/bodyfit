@@ -8,6 +8,31 @@ import image7 from '../../assets/images/Classes/box.jpg'
 import image8 from '../../assets/images/Classes/yoga.jpg'
 import image9 from '../../assets/images/Classes/fitness.jpg'
 
+import trainer1 from '../../assets/images/OurTeam/trainer1.png'
+import trainer2 from '../../assets/images/OurTeam/trainer2.png'
+import trainer3 from '../../assets/images/OurTeam/trainer3.png'
+
+export const teamData = [
+  {
+    id: 1,
+    name: 'John Lewis',
+    workout: 'Yoga Trainer',
+    img: trainer1
+  },
+  {
+    id: 2,
+    name: 'Jonathan Doe',
+    workout: 'Crossfit Trainer',
+    img: trainer2
+  },
+  {
+    id: 3,
+    name: 'Ana June',
+    workout: 'Personal Trainer',
+    img: trainer3
+  }
+]
+
 export const postsData = [
   {
     id: 1,

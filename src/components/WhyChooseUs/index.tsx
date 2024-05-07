@@ -4,6 +4,7 @@ import shape from '../../assets/images/ChooseUs/shape.png'
 import bottle from '../../assets/images/ChooseUs/bottle.png'
 import equipament from '../../assets/images/ChooseUs/equipament.png'
 import bag from '../../assets/images/ChooseUs/bag.png'
+
 import Title from '../TItle'
 
 const WhyChooseUs = () => (
@@ -11,8 +12,8 @@ const WhyChooseUs = () => (
     className="h-screen bg-no-repeat bg-cover flex items-center justify-center"
     style={{ backgroundImage: `url(${bg})` }}
   >
-    <div className="container flex gap-32">
-      <img src={main} alt="Uma pessoa treinando" />
+    <div className="container flex md:justify-between">
+      <img className="" src={main} alt="Uma pessoa treinando" />
       <div className="max-w-lg">
         <Title text="Escolha a gente" />
         <h2 className="text-white font-bold text-4xl mt-6">

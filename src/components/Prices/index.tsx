@@ -58,9 +58,9 @@ const Prices = () => (
           faça um livro de espécimes tipo.
         </p>
       </div>
-      <ul className="grid grid-cols-3 gap-6">
+      <ul className="grid grid-cols-1 md:grid-cols-3 gap-10 w-[100%]">
         {priceData.map((plan) => (
-          <li key={plan.id} className="w-[400px] text-center bg-white">
+          <li key={plan.id} className="md:w-[100%] text-center bg-white">
             <div
               className="bg-cover bg-no-repeat w-full h-[235px] relative"
               style={{ backgroundImage: `url(${plan.img})` }}
@@ -79,7 +79,7 @@ const Prices = () => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-              <button className="max-w-max bg-red-600 text-white flex item-center p-4 gap-2 font-bold uppercase transition ease-linear hover:shadow-2xl">
+              <button className="text-sm max-w-max bg-red-600 text-white flex item-center p-4 gap-2 font-bold uppercase transition ease-linear hover:shadow-2xl">
                 COMPRE AGORA
               </button>
             </div>

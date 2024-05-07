@@ -2,11 +2,11 @@ import { galleryImg } from '../GalleryFiles'
 
 const GalleryList = () => (
   <div className="container">
-    <ul className="max-w-[80%] my-[0] mx-[auto] grid grid-cols-3 gap-4 grid-rows-3 py-10">
+    <ul className="max-w-[80%] my-[0] mx-[auto] grid grid-cols-1 md:grid-cols-3 gap-4 grid-rows-3 py-10">
       {galleryImg.map((item) => (
         <li className=" " key={item.id}>
           <img
-            className="min-w-full min-h-full"
+            className="min-w-full min-h-full object-cover"
             src={item.img}
             alt="Foto da academia"
           />

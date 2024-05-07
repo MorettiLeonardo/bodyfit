@@ -3,8 +3,8 @@ import { Facebook, Twitter, Youtube } from 'lucide-react'
 import logo from '../../assets/images/BodyFit_black.png'
 
 const Footer = () => (
-  <footer className="container flex gap-[15%] py-[100px] text-zinc-600">
-    <div className="max-w-[30%] flex flex-col gap-5">
+  <footer className="container grid grid-cols-1 px-[10%] md:max-w-[80%] md:grid-cols-3 gap-4 py-[100px] text-zinc-600">
+    <div className="flex flex-col gap-5">
       <img className="max-w-[200px]" src={logo} alt="BodyFit" />
       <p className="text-zinc-600 font-semibold">
         Leve sua saúde e seu corpo para o próximo nível com nosso programa
@@ -26,8 +26,8 @@ const Footer = () => (
         Política de Privacidade | &copy; 2024 BodyFit
       </p>
     </div>
-    <div className="max-w-[30%] font-medium">
-      <h2 className="border-b-[4px] rounded border-pink-800 font-bold text-black text-2xl">
+    <div className="md:ml-[40%] m-0 font-medium">
+      <h2 className="max-w-max border-b-[4px] rounded border-pink-800 font-bold text-black text-2xl">
         Nossas Aulas
       </h2>
       <ul className="mt-8 flex flex-col gap-4">
@@ -38,7 +38,7 @@ const Footer = () => (
         <li>Treino de força </li>
       </ul>
     </div>
-    <div className="max-w-[30%]">
+    <div className="md:ml-[40%] m-0 max-w-max">
       <h2 className="border-b-[4px] rounded border-pink-800 font-bold text-black text-2xl">
         Horários{' '}
       </h2>

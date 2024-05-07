@@ -29,11 +29,10 @@ const LatestBlog = () => (
     <Title text="Blog" />
     <h2 className="font-bold text-3xl">Nossas notícias recentes</h2>
     <p className="font-semibold text-zinc-500 max-w-[500px] text-center">
-      Gymat an unknown printer took a galley of type and scrambled make a type
-      specimen book.
+      Nossas noticias mais recents no nosso blog, confira abaixo!
     </p>
     <div>
-      <ul className="grid grid-cols-3 gap-8">
+      <ul className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
         {recentNews.map((news) => (
           <li key={news.id}>
             <div className="p-4 shadow-xl h-[400px] flex flex-col gap-6 relative">

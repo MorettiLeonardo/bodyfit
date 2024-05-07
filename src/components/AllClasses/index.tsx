@@ -12,7 +12,7 @@ const AllClasses = () => (
         <li
           key={currentClass.id}
           style={{ backgroundImage: `url(${currentClass.img})` }}
-          className="h-[367px] w-[376px] p-4 rounded-md text-white bg-cover bg-center bg-no-repeat relative shadow-lg"
+          className="w-[300px] h-[300px] md:h-[367px] md:w-[376px] p-4 rounded-md text-white bg-cover bg-center bg-no-repeat relative shadow-lg"
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md" />
           <div className="absolute inset-0 flex flex-col gap-1 p-4">
