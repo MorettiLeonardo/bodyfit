@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-section {
@@ -30,7 +30,7 @@
 }
 
 .card-class.relative:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -40,7 +40,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
   transform-origin: center;
   transform: scale(1);
 }
