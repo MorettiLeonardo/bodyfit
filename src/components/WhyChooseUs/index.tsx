@@ -9,14 +9,14 @@ import Title from '../TItle'
 
 const WhyChooseUs = () => (
   <div
-    className="h-screen bg-no-repeat bg-cover flex items-center justify-center"
+    className="min-h-screen bg-no-repeat bg-cover"
     style={{ backgroundImage: `url(${bg})` }}
   >
-    <div className="container flex md:justify-between">
+    <div className="container py-10 gap-8 flex justify-center items-center flex-col xl:flex-row lg:justify-between">
       <img className="" src={main} alt="Uma pessoa treinando" />
       <div className="max-w-lg">
         <Title text="Escolha a gente" />
-        <h2 className="text-white font-bold text-4xl mt-6">
+        <h2 className="text-white font-bold text-2xl sm:text-4xl mt-6">
           Podemos dar uma forma ao seu corpo aqui!
         </h2>
         <p className="text-zinc-400 leading-6 mt-4">
@@ -26,7 +26,7 @@ const WhyChooseUs = () => (
           condicionamento físico e nutrição que o ajudará a atingir seus
           objetivos específicos.
         </p>
-        <div className="mt-6 text-white font-bold text-lg grid grid-cols-2 gap-8">
+        <div className="mt-6 text-white font-bold text-lg grid grid-cols-1 place-items-start sm:grid-cols-2 gap-8">
           <div className="flex justify-center items-center gap-4">
             <img
               className="max-w-16 rounded-full bg-zinc-800 p-3 transition ease-linear hover:bg-red-600"

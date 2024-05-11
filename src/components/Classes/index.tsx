@@ -3,7 +3,7 @@ import Title from '../TItle'
 import { classesMainData } from '../Data'
 
 const Classes = () => (
-  <section className="bg-white h-screen flex flex-col justify-center items-center">
+  <section className="bg-white py-6 min-h-screen flex flex-col justify-center items-center">
     <Title text="AULAS EM DESTAQUE" />
     <div className="container ">
       <h1 className="text-center text-2xl md:text-4xl font-bold mb-10 mt-5">

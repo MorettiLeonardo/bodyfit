@@ -16,8 +16,8 @@ type Props = {
 
 const AboutUs = ({ displayCards }: Props) => {
   return (
-    <section className="about-section min-h-screen">
-      <div className="container">
+    <section className="about-section min-h-screen py-10">
+      <div className="container flex flex-col items-center">
         {displayCards && (
           <div className="flex justify-between items-center">
             <AboutCard
@@ -38,7 +38,7 @@ const AboutUs = ({ displayCards }: Props) => {
           </div>
         )}
         <div
-          className={`flex items-center justify-between gap-6 ${displayCards ? 'mt-28' : 'pt-28'}`}
+          className={`flex-col xl:flex-row flex items-center justify-between gap-6 ${displayCards ? 'mt-28' : 'pt-28'}`}
         >
           <div className="flex flex-col gap-8">
             <Title text="QUEM NÓS SOMOS" />
@@ -50,12 +50,12 @@ const AboutUs = ({ displayCards }: Props) => {
               abrangente projetado para ajudá-lo a atingir seus objetivos de
               condicionamento físico.
             </p>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="p-5 font-bold uppercase text-center text-xl flex flex-col justify-center items-center gap-2">
                 <img className="w-14 h-14" src={weightlifter} alt="Professor" />
                 <p>TREINADORES PROFISSIONAIS</p>
               </div>
-              <div className="p-5 font-bold uppercase text-center text-xl flex flex-col justify-center items-center gap-2 border-r-[1px] border-l-[1px] border-zinc-500">
+              <div className="p-5 font-bold uppercase text-center text-xl flex flex-col justify-center items-center gap-2 md:border-r-[1px] border-l-[1px] md:border-zinc-500">
                 <img
                   className="w-14 h-14"
                   src={equipaments}
@@ -68,7 +68,6 @@ const AboutUs = ({ displayCards }: Props) => {
                 <p>MÁQUINAS FANTÁSTICAS</p>
               </div>
             </div>
-            <button></button>
           </div>
           <img
             className="max-h-[430px] z-10"
@@ -76,7 +75,7 @@ const AboutUs = ({ displayCards }: Props) => {
             alt="Mulher correndo"
           />
           <img
-            className="absolute right-[650px] max-h-[550px]"
+            className="hidden 2xl:block absolute right-[650px] max-h-[550px]"
             src={running}
             alt="Palavra 'correndo'"
           />

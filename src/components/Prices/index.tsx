@@ -52,17 +52,19 @@ const Prices = () => (
     <div className="container flex flex-col justify-center items-center">
       <div className="flex flex-col items-center justify-center gap-8 pt-24 pb-24">
         <Title text="TABELA DE PREÇOS" />
-        <h2 className="font-bold text-3xl">Plano de preços exclusivo</h2>
+        <h2 className="font-bold text-3xl text-center">
+          Plano de preços exclusivo
+        </h2>
         <p className="text-zinc-600 font-semibold max-w-[600px] text-center">
           Gymat, um impressor desconhecido pegou uma galera de tipos e mexeu
           faça um livro de espécimes tipo.
         </p>
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-3 gap-10 w-[100%]">
+      <ul className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-[100%]">
         {priceData.map((plan) => (
           <li key={plan.id} className="md:w-[100%] text-center bg-white">
             <div
-              className="bg-cover bg-no-repeat w-full h-[235px] relative"
+              className="bg-cover bg-center bg-no-repeat w-full h-[235px] relative"
               style={{ backgroundImage: `url(${plan.img})` }}
             >
               <h3 className="text-xl text-zinc-700 max-w-max bg-white font-bold absolute bottom-0 left-0 right-0 mx-auto py-4 px-16">

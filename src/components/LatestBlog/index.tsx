@@ -35,13 +35,13 @@ const LatestBlog = () => (
       <ul className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
         {recentNews.map((news) => (
           <li key={news.id}>
-            <div className="p-4 shadow-xl h-[400px] flex flex-col gap-6 relative">
+            <div className="p-4 shadow-xl min-h-max sm:h-[400px] flex flex-col justify-between gap-6">
               <p className="py-1 px-3 mt-8 border max-w-max border-black font-bold rounded-full">
                 {news.date}
               </p>
               <h2 className="font-bold text-xl">{news.title}</h2>
               <p className="font-semibold text-zinc-500">{news.description}</p>
-              <button className="absolute bottom-[48px] left-[24px] text-white bg-red-600 p-3 max-w-max uppercase font-bold transition ease-linear hover:shadow-lg">
+              <button className="bottom-[48px] left-[24px] text-white bg-red-600 p-3 max-w-max uppercase font-bold transition ease-linear hover:shadow-lg">
                 Leia mais
               </button>
             </div>

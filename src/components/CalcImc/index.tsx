@@ -22,14 +22,14 @@ const CalcImc = () => {
   return (
     <div style={{ backgroundImage: `url(${bg})` }} className="p-[50px]">
       <div className="container flex flex-col gap-4">
-        <h2 className="text-white font-bold text-4xl">
+        <h2 className="text-white font-bold text-center sm:text-start text-2xl sm:text-4xl">
           Vamos calcular seu <span className="text-red-600">IMC</span>
         </h2>
         <p className="text-zinc-500 font-semibold max-w-[460px] ">
           Determine facilmente seu índice de massa corporal com nossa ferramenta
           de cálculo.
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <div className="flex flex-col gap-4">
             <input
               className="p-3 border-[2px] text-white border-zinc-500 bg-transparent"
