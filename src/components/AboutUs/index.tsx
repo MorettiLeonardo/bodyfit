@@ -80,7 +80,7 @@ const AboutUs = ({ displayCards }: Props) => {
             alt="Palavra 'correndo'"
           />
         </div>
-        <button className="bg-zinc-700 text-white border-2 flex item-center p-4 gap-2 mt-4 font-bold uppercase transition ease-linear hover:bg-red-700">
+        <button className="bg-zinc-700 text-white border-2 flex item-center p-4 gap-2 mt-10 md:mt-4 font-bold uppercase transition ease-linear hover:bg-red-700">
           Nossas aulas
         </button>
       </div>
