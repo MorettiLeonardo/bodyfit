@@ -13,8 +13,12 @@ const RecentPosts = () => (
             alt="Imagem de academia"
           />
           <div>
-            <p className="font-medium text-zinc-500 text-sm">{post.date}</p>
-            <h3 className="font-bold mt-1">{post.title}</h3>
+            <p className="font-medium text-zinc-500 text-xs sm:text-sm">
+              {post.date}
+            </p>
+            <h3 className="font-bold mt-1 text-xs sm:text-base">
+              {post.title}
+            </h3>
           </div>
         </li>
       ))}

@@ -9,7 +9,7 @@ import RecentPosts from '../RecentPosts'
 import BlogAd from '../BlogAd'
 
 const NewsList = () => (
-  <div className="container pt-20 flex justify-between">
+  <div className="container pt-20 flex flex-col items-center lg:items-start lg:flex-row gap-[100px]">
     <ul className="flex flex-col gap-14">
       {newsData.map((currentNew) => (
         <li key={currentNew.id}>
@@ -22,7 +22,7 @@ const NewsList = () => (
         </li>
       ))}
     </ul>
-    <aside className="max-w-[400px] w-full flex flex-col gap-10">
+    <aside className="w-full lg:max-w-[400px] w-full flex flex-col gap-10">
       <div className="flex">
         <input
           className="w-full p-4 rounded-l-lg border border-[#ccc]"
