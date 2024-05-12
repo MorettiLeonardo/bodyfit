@@ -9,7 +9,11 @@ type Props = {
 
 const New = ({ description, img, title, author }: Props) => (
   <div className="max-w-[800px] max-h-[800px] flex flex-col gap-4">
-    <img src={img} alt="Imagem da notícia" />
+    <img
+      className="max-w-[780px] max-h-[500px] object-cover"
+      src={img}
+      alt="Imagem da notícia"
+    />
     <p className="flex gap-2 font-semibold text-zinc-600 text-sm items-center">
       <Layers3 className="text-red-600 w-[17px]" /> {author}
     </p>
