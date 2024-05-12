@@ -35,7 +35,7 @@ const ScheduleDays = () => {
 
   return (
     <div className="container py-10 flex flex-col items-center">
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <ScheduleButton
           active={activeButtonDay('monday')}
           text="Segunda"

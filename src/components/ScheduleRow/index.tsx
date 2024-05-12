@@ -5,7 +5,7 @@ type Props = {
 }
 
 const ScheduleRow = ({ className, time, trainer }: Props) => (
-  <div className="w-[90%] flex items-center justify-center bg-[#f2f2f2] p-7 mt-6">
+  <div className="w-[250px] md:w-[90%] flex flex-col md:flex-row gap-6 md:gap-0 items-center justify-center bg-[#f2f2f2] p-7 mt-6">
     <div className="grid items-center justify-center w-full gap-2 text-center ">
       <p className="font-semibold text-[#b2a0a0] text-sm">Nome da aula</p>
       <p className="font-bold text-lg">{className}</p>
