@@ -22,7 +22,7 @@ const NewsList = () => (
         </li>
       ))}
     </ul>
-    <aside className="w-full lg:max-w-[400px] w-full flex flex-col gap-10">
+    <aside className="w-full lg:max-w-[400px] flex flex-col gap-10">
       <div className="flex">
         <input
           className="w-full p-4 rounded-l-lg border border-[#ccc]"
